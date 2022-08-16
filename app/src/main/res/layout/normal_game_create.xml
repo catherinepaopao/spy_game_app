@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:id="@+id/Number_of_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of players"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/Number_of_spies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="472dp"
+        android:text="Number of spies"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_players"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="146dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="148dp"
+        android:text="START"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/player_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="92dp"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Number_of_spies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_players"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/player_subtract"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="108dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/Number_of_spies"
+        app:layout_constraintEnd_toStartOf="@+id/player_add"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_players"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <TextView
+        android:id="@+id/player_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Number_of_spies"
+        app:layout_constraintEnd_toStartOf="@+id/player_add"
+        app:layout_constraintStart_toEndOf="@+id/player_subtract"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_players" />
+
+    <Button
+        android:id="@+id/spy_subtract"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="164dp"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <Button
+        android:id="@+id/spy_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="164dp"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toEndOf="@+id/spy_subtract"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <TextView
+        android:id="@+id/spy_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintEnd_toStartOf="@+id/spy_add"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/spy_subtract"
+        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <TextView
+        android:id="@+id/errors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#a85700"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spy_number"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <Switch
+        android:id="@+id/blank_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blank Guesser"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spy_add"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <Switch
+        android:id="@+id/chaos_mode"
+        android:layout_width="138dp"
+        android:layout_height="28dp"
+        android:text="Chaos Mode"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blank_guess"
+        app:layout_constraintVertical_bias="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
