@@ -438,8 +438,8 @@ public class NormalGameCreate extends AppCompatActivity {
         wordsEng.add(new Pair<String, String>("Donut", "Bagel"));
         wordsEng.add(new Pair<String, String>("Concert", "Recital"));
         wordsEng.add(new Pair<String, String>("Ignorant", "Stupid"));
-        /* wordsEng.add(new Pair<String, String>("", ""));
-        wordsEng.add(new Pair<String, String>("", ""));
+        wordsEng.add(new Pair<String, String>("Socks", "Shoes"));
+        /*wordsEng.add(new Pair<String, String>("", ""));
         wordsEng.add(new Pair<String, String>("", ""));
         wordsEng.add(new Pair<String, String>("", ""));
         wordsEng.add(new Pair<String, String>("", ""));
@@ -492,8 +492,8 @@ public class NormalGameCreate extends AppCompatActivity {
         wordsCh.add(new Pair<String, String>("甜甜圈", "百吉饼"));
         wordsCh.add(new Pair<String, String>("音乐会", "独奏会"));
         wordsCh.add(new Pair<String, String>("无知", "愚蠢"));
+        wordsCh.add(new Pair<String, String>("袜子", "鞋子"));
         /* wordsCh.add(new Pair<String, String>("", ""));
-        wordsCh.add(new Pair<String, String>("", ""));
         wordsCh.add(new Pair<String, String>("", ""));
         wordsCh.add(new Pair<String, String>("", ""));
         wordsCh.add(new Pair<String, String>("", ""));

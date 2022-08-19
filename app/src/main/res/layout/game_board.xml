@@ -63,7 +63,7 @@
         android:id="@+id/starting"
         android:layout_width="294dp"
         android:layout_height="46dp"
-        android:background="@color/darkred"
+        android:background="@color/cardview_dark_background"
         android:text=""
         android:textAlignment="center"
         android:textColor="#ebead3"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -39,8 +38,8 @@
         android:layout_height="78dp"
         android:layout_marginBottom="148dp"
         android:text="START"
-        android:textSize="30sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -64,14 +63,12 @@
         android:id="@+id/player_subtract"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginStart="92dp"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/Number_of_spies"
-        app:layout_constraintEnd_toStartOf="@+id/player_add"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Number_of_players"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintVertical_bias="0.508" />
 
     <TextView
         android:id="@+id/player_number"
@@ -88,28 +85,27 @@
         android:id="@+id/spy_subtract"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="84dp"
         android:text="-"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/start_game"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintTop_toBottomOf="@+id/player_subtract"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/spy_add"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="92dp"
         android:text="+"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/start_game"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
-        app:layout_constraintStart_toEndOf="@+id/spy_subtract"
-        app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintTop_toBottomOf="@+id/player_add"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/spy_number"
@@ -120,10 +116,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/start_game"
         app:layout_constraintEnd_toStartOf="@+id/spy_add"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toEndOf="@+id/spy_subtract"
         app:layout_constraintTop_toBottomOf="@+id/Number_of_spies"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/errors"

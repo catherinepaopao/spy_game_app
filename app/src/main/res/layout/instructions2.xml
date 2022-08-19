@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
 
     <TextView
         android:id="@+id/textView3"
@@ -42,7 +43,7 @@
         android:text="BLANK GUESSER: One player will be the Blank Guesser and will not receive a word. The Blank Guesser's goal
 is to stay in the game as long as possible. They are the only one allowed to lie to survive.
         \n\nIf the Blank Guesser stays alive until only ONE SPY and ONE CIVILIAN remain, the Blank Guesser wins.
-        \n\n\nCHAOS MODE: Play to find out! There are four possible game modes, so just have fun!
+        \n\n\nCHAOS MODE: Play to find out! There are three possible game modes, so just have fun!
         \n\nGood luck!"
         android:textColor="@color/black"
         android:textSize="19dp"
